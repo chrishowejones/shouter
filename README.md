@@ -41,6 +41,14 @@ Finally open the live application in browser:
 
     heroku open
 
+To restart the postgres database server locally:
+
+    sudo su postgres -c 'pg_ctl -D /opt/local/var/db/postgresql84/defaultdb/ restart'
+
+To stop the postgres server locally:
+
+    sudo su postgres -c 'pg_ctl -D /opt/local/var/db/postgresql84/defaultdb/ stop'
+
 
 ## License
 
